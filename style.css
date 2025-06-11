@@ -222,45 +222,29 @@ body {
   box-shadow: var(--shadow-hover);
 }
 @media (max-width: 768px) {
-  .hero {
-    padding: 60px 20px 30px;
-  }
-
   .hero-content {
     grid-template-columns: 1fr;
-    gap: 2rem;
-    text-align: center;
-  }
-
-  .hero-title {
-    font-size: 2.2rem;
-  }
-
-  .hero-subtitle {
-    font-size: 1rem;
-  }
-
-  .pricing-highlight {
-    padding: 1.5rem;
-  }
-
-  .price-amount {
-    font-size: 2rem;
-  }
-
-  .hero-buttons {
+    display: flex;
     flex-direction: column;
-    align-items: center;
+  }
+
+  .hero-text {
+    order: 1;
+  }
+
+  .hero-image {
+    order: 2;
+    margin-top: 2rem;
   }
 
   .hero-image img {
-    height: auto;
     max-height: 300px;
+    width: 100%;
     object-fit: cover;
-    margin: 0 auto;
     border-radius: var(--border-radius);
   }
 }
+
 
 /* Buttons */
 .btn {
