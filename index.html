@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hawthorn Place - Modern Homes Starting at $699K</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/page/style.css">
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <h2>Hawthorn Place</h2>
+        </div>
+        <div class="nav-menu">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#community" class="nav-link">Community</a>
+          <a href="#homes" class="nav-link">Homes</a>
+          <a href="#location" class="nav-link">Location</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+        <div class="nav-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">Welcome to Hawthorn Place</h1>
+          <p class="hero-subtitle">Modern homes designed for modern living in a prime family-friendly location</p>
+          <div class="pricing-highlight">
+            <div class="price-box">
+              <span class="price-label">Starting at</span>
+              <span class="price-amount">$699K</span>
+              <span class="price-detail">Base home without basement</span>
+            </div>
+            <div class="price-addon">
+              <span class="addon-text">+ Optional finished basement for $50K</span>
+            </div>
+            <div class="plot-availability">
+              <p><strong>Available Now:</strong> 4 south-facing plots and 2 north-facing plots</p>
+            </div>
+          </div>
+          <div class="hero-buttons">
+            <button class="btn btn-primary" onclick="openModal()">Get More Info</button>
+            <button class="btn btn-secondary" onclick="scrollToSection('contact')">Schedule a Tour</button>
+          </div>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="/page/pictures/one.png" alt="Modern home exterior" />
+      </div>
+    </section>
+
+    <!-- Custom Build Section -->
+    <section id="custom-build" class="custom-build-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Build Your Dream Home</h2>
+          <p class="section-subtitle">Proposed construction — fully tailored to your vision</p>
+        </div>
+        <div class="custom-build-text animate-in">
+          <p>
+            Every home is <strong>bespoke</strong>. Choose your layout, features, and finishes. On average, construction takes around <strong>8 months</strong> from groundbreaking to move-in.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Community Overview -->
+    <section id="community" class="community-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Discover Your New Community</h2>
+          <p>Experience the perfect blend of modern design, convenient location, and family-friendly amenities</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-home"></i>
+            </div>
+            <h3>Modern Home Designs</h3>
+            <p>Contemporary architecture with open floor plans, high-end finishes, and energy-efficient features</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <h3>Prime Location</h3>
+            <p>Strategically located with easy access to schools, shopping, dining, and major transportation routes</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Family-Friendly Environment</h3>
+            <p>Safe, welcoming neighborhood with parks, playgrounds, and community spaces for all ages</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Homes Section -->
+    <section id="homes" class="homes-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Modern Home Designs</h2>
+          <p>Choose from our collection of thoughtfully designed homes</p>
+        </div>
+        <div class="homes-grid">
+          <div class="home-card">
+            <img src="/page/pictures/kitchen.png" alt="Modern kitchen" />
+            <div class="home-info">
+              <h3>Open Concept Living</h3>
+              <p>Spacious kitchens with modern appliances and seamless flow to living areas</p>
+            </div>
+          </div>
+          <div class="home-card">
+            <img src="/page/pictures/bathroom.png" alt="Modern bedroom" />
+            <div class="home-info">
+              <h3>Comfortable Rooms</h3>
+              <p>Well-appointed rooms with ample natural light and storage space</p>
+            </div>
+          </div>
+          <div class="home-card">
+            <img src="/page/pictures/shower.png" alt="Modern bathroom" />
+            <div class="home-info">
+              <h3>Luxury Bathrooms</h3>
+              <p>Spa-like bathrooms with premium fixtures and elegant finishes</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location Section -->
+    <section id="location" class="location-section">
+      <div class="container">
+        <div class="location-content">
+          <div class="location-text">
+            <h2>Perfect Location</h2>
+            <p>Hawthorn Place offers the ideal combination of suburban tranquility and urban convenience.</p>
+            <div class="location-features">
+              <div class="location-feature">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Top-rated schools nearby</span>
+              </div>
+              <div class="location-feature">
+                <i class="fas fa-shopping-cart"></i>
+                <span>Shopping centers within minutes</span>
+              </div>
+              <div class="location-feature">
+                <i class="fas fa-car"></i>
+                <span>Easy highway access</span>
+              </div>
+              <div class="location-feature">
+                <i class="fas fa-tree"></i>
+                <span>Parks and recreation nearby</span>
+              </div>
+            </div>
+          </div>
+          <div class="location-image">
+            <img src="https://images.pexels.com/photos/2157404/pexels-photo-2157404.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Community area" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Ready to Make Hawthorn Place Your Home?</h2>
+          <p>Contact us today to schedule a tour or get more information</p>
+        </div>
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <h4>Call Us</h4>
+                <p>(555) 123-4567</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <h4>Email Us</h4>
+                <p>info@hawthornplace.com</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <h4>Visit Us</h4>
+                <p>Hawthorn Place Sales Center<br>123 Main Street</p>
+              </div>
+            </div>
+          </div>
+          <div class="cta-buttons">
+            <button class="btn btn-primary btn-large" onclick="openModal()">Get More Information</button>
+            <button class="btn btn-secondary btn-large">Schedule a Tour</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>Hawthorn Place</h3>
+            <p>Modern homes for modern living</p>
+          </div>
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <a href="#home">Home</a>
+            <a href="#community">Community</a>
+            <a href="#homes">Homes</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="footer-section">
+            <h4>Contact</h4>
+            <p>(555) 123-4567</p>
+            <p>info@hawthornplace.com</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Hawthorn Place. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Email Signup Modal -->
+    <div id="emailModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-header">
+          <h2>Access Exclusive Information</h2>
+          <p>Sign up to receive detailed floor plans, pricing, and exclusive updates about Hawthorn Place</p>
+        </div>
+        <form class="modal-form" onsubmit="handleFormSubmit(event)">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" required>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">Get Exclusive Access</button>
+        </form>
+      </div>
+    </div>
+
+    <script type="module" src="/page/mainPage.js"></script>
+  </body>
+</html>
