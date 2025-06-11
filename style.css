@@ -223,13 +223,24 @@ body {
 }
 @media (max-width: 768px) {
   .hero-content {
-    grid-template-columns: 1fr;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 
   .hero-text {
     order: 1;
+    text-align: center;
+    align-items: center;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .pricing-highlight {
+    text-align: center;
   }
 
   .hero-image {
@@ -238,12 +249,13 @@ body {
   }
 
   .hero-image img {
-    max-height: 300px;
     width: 100%;
+    height: auto;
     object-fit: cover;
     border-radius: var(--border-radius);
   }
 }
+
 
 
 /* Buttons */
