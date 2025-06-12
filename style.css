@@ -66,6 +66,10 @@ body {
   align-items: center;
   height: 70px;
 }
+.logo{
+  padding-top: 1rem;
+  height: 80px;
+}
 
 .nav-logo h2 {
   color: var(--primary-color);
@@ -241,18 +245,6 @@ body {
 
   .pricing-highlight {
     text-align: center;
-  }
-
-  .hero-image {
-    order: 2;
-    margin-top: 2rem;
-  }
-
-  .hero-image img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: var(--border-radius);
   }
 }
 
