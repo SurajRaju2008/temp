@@ -48,14 +48,17 @@ function openModal() {
   document.body.style.overflow = 'hidden';
 }
 
+let isFormSubmitted = false;
+
 function closeModal() {
+  if (!isFormSubmitted) return; 
   modal.style.display = 'none';
   document.body.style.overflow = 'auto';
 }
 
 // Close modal when clicking outside
 window.addEventListener('click', (e) => {
-  if (e.target === modal) {
+  if (e.target === modal && isFormSubmitted) {
     closeModal();
   }
 });
@@ -88,6 +91,8 @@ function handleFormSubmit(e) {
     </div>
   `;
   
+  isFormSubmitted = true;
+
   setTimeout(() => {
     closeModal();
   }, 3000);
