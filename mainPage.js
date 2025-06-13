@@ -143,8 +143,11 @@ document.querySelectorAll('.btn').forEach(button => {
 // Reviews Slider
 const reviews = [
   { img: "/pictures/pic1.png" },
+  { img: "/pictures/pic12.png" },
   { img: "/pictures/pic2.png" },
+  { img: "/pictures/pic22.png" },
   { img: "/pictures/pic3.png" },
+  { img: "/pictures/pic32.png" }
 ];
 
 const reviewsTrack = document.querySelector('.reviews-track');
