@@ -130,14 +130,6 @@ body {
 }
 
 /* Hero Section */
-.hero-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 3rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
 .hero {
   min-height: 100vh;
   min-width: 300px;
@@ -147,36 +139,6 @@ body {
   padding: 100px 20px 50px;
   background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
 }
-.hero-side {
-  flex: 1 1 35%;
-  min-width: 280px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  text-align: center;
-  background-color: var(--border-color);
-  border: 1rem solid #ffffff;
-  border-radius: 20px;
-}
-
-.hero-side .profile-pic {
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  object-fit: cover;
-  box-shadow: var(--shadow-hover);
-  margin-bottom: 1.5rem;
-}
-
-.hero-side p {
-  font-size: 1rem;
-  color: var(--text-light);
-  line-height: 1.6;
-  max-width: 300px;
-}
-
 
 .hero-content {
   max-width: 1200px;
@@ -207,7 +169,7 @@ body {
   padding: 2rem;
   border-radius: var(--border-radius);
   margin-bottom: 2rem;
-  min-width: 378px;
+  min-width: 315px;
   color: white;
   text-align: center;
 }
@@ -261,9 +223,6 @@ body {
   box-shadow: var(--shadow-hover);
 }
 @media (max-width: 768px) {
-  .hero-wrapper {
-    flex-direction: column;
-  }
 
   .hero, .hero-side {
     width: 100%;
@@ -290,7 +249,47 @@ body {
   .pricing-highlight {
     text-align: center;
   }
+  .hero-side-rect {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-pic-rect {
+    margin-bottom: 1rem;
+  }
 }
+.hero-side-rect {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: #f9f9f9;
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  max-width: 900px;
+  margin: 3rem auto;
+}
+
+.profile-pic-rect {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: var(--shadow-hover);
+}
+
+.hero-side-text h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.hero-side-text p {
+  font-size: 1.1rem;
+  color: var(--text-light);
+  line-height: 1.6;
+  max-width: 600px;
+}
+
 
 
 

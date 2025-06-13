@@ -145,7 +145,6 @@ const reviews = [
   { img: "/pictures/pic1.png" },
   { img: "/pictures/pic2.png" },
   { img: "/pictures/pic3.png" },
-  { img: "/pictures/pic4.png" }
 ];
 
 const reviewsTrack = document.querySelector('.reviews-track');
