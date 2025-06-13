@@ -130,13 +130,53 @@ body {
 }
 
 /* Hero Section */
+.hero-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 .hero {
   min-height: 100vh;
+  min-width: 300px;
+  flex: 1 1 60%;
   display: flex;
   align-items: center;
   padding: 100px 20px 50px;
   background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
 }
+.hero-side {
+  flex: 1 1 35%;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--border-color);
+  border: 1rem solid #ffffff;
+  border-radius: 20px;
+}
+
+.hero-side .profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: var(--shadow-hover);
+  margin-bottom: 1.5rem;
+}
+
+.hero-side p {
+  font-size: 1rem;
+  color: var(--text-light);
+  line-height: 1.6;
+  max-width: 300px;
+}
+
 
 .hero-content {
   max-width: 1200px;
@@ -167,6 +207,7 @@ body {
   padding: 2rem;
   border-radius: var(--border-radius);
   margin-bottom: 2rem;
+  min-width: 378px;
   color: white;
   text-align: center;
 }
@@ -196,7 +237,7 @@ body {
 }
 
 .price-addon {
-  font-size: 0.99rem;
+  font-size: 0.95rem;
   font-weight: 500;
 }
 
@@ -220,6 +261,15 @@ body {
   box-shadow: var(--shadow-hover);
 }
 @media (max-width: 768px) {
+  .hero-wrapper {
+    flex-direction: column;
+  }
+
+  .hero, .hero-side {
+    width: 100%;
+    padding: 50px 0;
+  }
+
   .hero-content {
     display: flex;
     flex-direction: column;
@@ -387,6 +437,76 @@ body {
 .feature-card p {
   color: var(--text-light);
   line-height: 1.6;
+}
+/* Reviews Section */
+.reviews {
+  padding: 5rem 1rem;
+  background: var(--background-gray);
+}
+
+.reviews h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 4rem;
+  color: var(--primary-color);
+}
+
+.reviews-slider {
+  position: relative;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.reviews-track {
+  display: flex;
+  gap: 2rem;
+  transition: transform 0.5s;
+}
+
+.review-card {
+  flex: 0 0 100%;
+  background: white;
+  padding: 2.5rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+  transition: var(--transition);
+}
+
+.review-img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: contain;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.reviews h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: var(--primary-color);
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.slider-controls button {
+  background: var(--secondary-color);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 /* Homes Section */

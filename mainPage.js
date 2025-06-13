@@ -140,6 +140,44 @@ document.querySelectorAll('.btn').forEach(button => {
     }
   });
 });
+// Reviews Slider
+const reviews = [
+  { img: "/pictures/pic1.png" },
+  { img: "/pictures/pic2.png" },
+  { img: "/pictures/pic3.png" },
+  { img: "/pictures/pic4.png" }
+];
+
+const reviewsTrack = document.querySelector('.reviews-track');
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+let currentSlide = 0;
+
+// Create review cards
+reviews.forEach(review => {
+  const reviewCard = document.createElement('div');
+  reviewCard.className = 'review-card';
+  reviewCard.innerHTML = `
+    <img src="${review.img}" alt="Client Review" class="review-img" />
+  `;
+  reviewsTrack.appendChild(reviewCard);
+});
+
+
+// Slider controls
+function updateSlider() {
+  reviewsTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+}
+
+prevBtn.addEventListener('click', () => {
+  currentSlide = Math.max(currentSlide - 1, 0);
+  updateSlider();
+});
+
+nextBtn.addEventListener('click', () => {
+  currentSlide = Math.min(currentSlide + 1, reviews.length - 1);
+  updateSlider();
+});
 
 // Make functions globally accessible for inline event handlers
 window.openModal = openModal;

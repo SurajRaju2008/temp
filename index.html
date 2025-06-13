@@ -32,31 +32,38 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
-      <div class="hero-content">
-        <div class="hero-text">
-          <h1 class="hero-title">Welcome to Hawthorn Place</h1>
-          <p class="hero-subtitle">Modern homes designed for modern living in a prime family-friendly location</p>
-          <div class="pricing-highlight">
-            <div class="price-box">
-              <span class="price-label">Starting at</span>
-              <span class="price-amount">$699K</span>
-              <span class="price-detail">Base home without basement</span>
+    <div class="hero-wrapper">
+      <section id="home" class="hero">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">Welcome to Hawthorn Place</h1>
+            <p class="hero-subtitle">Modern homes designed for modern living in a prime family-friendly location</p>
+            <div class="pricing-highlight">
+              <div class="price-box">
+                <span class="price-label">Starting at</span>
+                <span class="price-amount">$699K</span>
+                <span class="price-detail">Base home without basement</span>
+              </div>
+              <div class="price-addon">
+                <span class="addon-text">+ Optional finished basement for $50K</span>
+              </div>
+              <div class="plot-availability">
+                <p><strong>Available Now:</strong> 4 south-facing plots and 2 north-facing plots</p>
+              </div>
             </div>
-            <div class="price-addon">
-              <span class="addon-text">+ Optional finished basement for $50K</span>
+            <div class="hero-buttons">
+              <button class="btn btn-primary" onclick="openModal()">Get More Info</button>
+              <button class="btn btn-secondary" onclick="scrollToSection('contact')">Schedule a Tour</button>
             </div>
-            <div class="plot-availability">
-              <p><strong>Available Now:</strong> 4 south-facing plots and 2 north-facing plots</p>
-            </div>
-          </div>
-          <div class="hero-buttons">
-            <button class="btn btn-primary" onclick="openModal()">Get More Info</button>
-            <button class="btn btn-secondary" onclick="scrollToSection('contact')">Schedule a Tour</button>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section id="hero-side" class="hero-side">
+        <h2>Eshu Chikoti</h2>
+        <img src="/pictures/profile.png" alt="Suraj Raju" class="profile-pic" />
+        <h3>I’m a new construction specialist and licensed real estate agent, proudly working with the top-performing team in Illinois to help families find their perfect home.</h3>
+      </section>
+    </div>
 
     <!-- Custom Build Section -->
     <section id="custom-build" class="custom-build-section">
@@ -71,6 +78,16 @@
           </p>
         </div>
       </div>
+        <section class="reviews" id="reviews">
+          <h2>Proposed Floor Plans</h2>
+          <div class="reviews-slider">
+              <div class="reviews-track"></div>
+              <div class="slider-controls">
+                  <button class="prev-btn" aria-label="Previous review">←</button>
+                  <button class="next-btn" aria-label="Next review">→</button>
+              </div>
+          </div>
+      </section>
     </section>
 
 
@@ -86,22 +103,22 @@
             <div class="feature-icon">
               <i class="fas fa-home"></i>
             </div>
-            <h3>Modern Home Designs</h3>
-            <p>Contemporary architecture with open floor plans, high-end finishes, and energy-efficient features</p>
+            <h3>Fully Customizable Homes</h3>
+            <p>Every home is bespoke—designed exactly the way you want it. We use premium interior finishes and include a 1-year full builder warranty for peace of mind.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">
               <i class="fas fa-map-marker-alt"></i>
             </div>
-            <h3>Prime Location</h3>
-            <p>Strategically located with easy access to schools, shopping, dining, and major transportation routes</p>
+            <h3>Unmatched Location & Value</h3>
+            <p>Located in the top-rated Stevenson School District. No other new construction offers fully custom single-family homes under $700K in this area.</p>
           </div>
           <div class="feature-card">
             <div class="feature-icon">
               <i class="fas fa-users"></i>
             </div>
-            <h3>Family-Friendly Environment</h3>
-            <p>Safe, welcoming neighborhood with parks, playgrounds, and community spaces for all ages</p>
+            <h3>Thriving Neighborhood</h3>
+            <p>Two parks within walking distance, with a brand-new daycare and Starbucks coming soon—helping keep property values strong and the community active.</p>
           </div>
         </div>
       </div>
@@ -119,7 +136,7 @@
             <img src="/pictures/kitchen.png" alt="Modern kitchen" />
             <div class="home-info">
               <h3>Open Concept Living</h3>
-              <p>Spacious kitchens with modern appliances and seamless flow to living areas</p>
+              <p>Spacious kitchens with great lighting, modern appliances and real hardwood</p>
             </div>
           </div>
           <div class="home-card">
@@ -168,6 +185,7 @@
           </div>
           <div class="location-image">
             <img src="/pictures/one.png" alt="Community area" />
+            <h5>Model Home is 156 Roman Ln</h5>
           </div>
         </div>
       </div>
@@ -200,7 +218,7 @@
               <i class="fas fa-map-marker-alt"></i>
               <div>
                 <h4>Visit Us</h4>
-                <p>Hawthorn Woods, IL<br>Roman Ln</p>
+                <p>Hawthorn Woods, IL<br>156 Roman Ln</p>
               </div>
             </div>
           </div>
