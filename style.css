@@ -498,14 +498,26 @@ body {
   margin-top: 2.5rem;
 }
 
-.slider-controls button {
-  background: var(--secondary-color);
-  color: white;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  border-radius: 0.25rem;
-  cursor: pointer;
-  transition: transform 0.3s ease;
+.scrollable {
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;
+}
+
+.scroll-track {
+  display: flex;
+  gap: 1rem;
+  scroll-snap-align: start;
+}
+
+.review-card {
+  flex: 0 0 auto;
+  width: 90vw; /* Or 300px, or whatever width you want */
+  scroll-snap-align: start;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 /* Homes Section */
@@ -623,7 +635,6 @@ body {
   font-size: 1rem;
   font-weight: 500;
 }
-
 
 
 /* Contact Section */

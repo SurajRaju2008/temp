@@ -167,20 +167,18 @@ reviews.forEach(review => {
 
 
 // Slider controls
-function updateSlider() {
-  reviewsTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
-}
 
-prevBtn.addEventListener('click', () => {
-  currentSlide = Math.max(currentSlide - 1, 0);
-  updateSlider();
+reviews.forEach(review => {
+  if (!review.image || !review.name) return; // Skip if data is missing
+
+  const reviewCard = document.createElement('div');
+  reviewCard.className = 'review-card';
+  reviewCard.innerHTML = `
+    <img src="${review.image}" alt="${review.name}" style="width:100%; height:auto;">
+    <h3 style="text-align:center; padding:0.5rem 0;">${review.name}</h3>
+  `;
+  reviewsTrack.appendChild(reviewCard);
 });
-
-nextBtn.addEventListener('click', () => {
-  currentSlide = Math.min(currentSlide + 1, reviews.length - 1);
-  updateSlider();
-});
-
 // Make functions globally accessible for inline event handlers
 window.openModal = openModal;
 window.closeModal = closeModal;
